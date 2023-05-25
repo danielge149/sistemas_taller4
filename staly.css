@@ -27,6 +27,7 @@ h2 {
   margin-top: 0;
   font-size: 24px;
   text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 label {
@@ -49,6 +50,7 @@ select {
   font-size: 16px;
   font-family: Arial, sans-serif;
   margin-bottom: 1px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 select option:first-child {
