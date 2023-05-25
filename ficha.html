@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="staly.css">
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+  </head>
+  <body >
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Container wrapper -->
+      <div class="container">
+        <!-- Navbar brand -->
+        <a class="navbar-brand me-2" >
+          <img
+            src="img/logo.ico"
+            height="16"
+            alt="MDB Logo"
+            loading="lazy"
+            style="margin-top: -1px;"
+          />
+        </a>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarButtonsExample"
+          aria-controls="navbarButtonsExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarButtonsExample">
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+          </ul>
+          <div class="collapse navbar-collapse" id="navbarButtonsExample">
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="ficha.html">Ficha medica</a>
+              </li>
+            </ul>
+            <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="info.html">Informacion</a>
+                  </li>
+                </ul>
+
+                <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                  <!-- Left links -->
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="cita.html">Pida su cita</a>
+                    </li>
+                  </ul>
+
+                  <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                    <!-- Left links -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="servicio.html">Servicios</a>
+                      </li>
+                    </ul>
+          <!-- Left links -->
+
+          <div class="d-flex align-items-center">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="sesion.html">Iniciar sesión</a>
+                </li>
+              </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="registro.html">Registrarse</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+
+
+    <form>
+        <h2>FICHA MEDÍCA</h2>
+        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="Apellido">Apellido:</label>
+        <input type="text" id="Apellido" name="Apellido" required>
+
+        <label for="Cedula">Cedula:</label>
+        <input type="number" id="Cedula" name="Cedula" required>
+
+        <label for="Correo">Correo:</label>
+        <input type="email" id="Correo" name="Correo" required>
+
+        <label for="Telefono">Telefono:</label>
+        <input type="number" id="Telefono" name="Telefono" required>
+
+        <label for="Nacimiento">Fecha Nacimiento:</label>
+        <input type="date" id="Nacimiento" name="Nacimiento" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="1" max="120" required>
+        
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+          <option value="">Selecciona una opción</option>
+          <option value="hombre">Hombre</option>
+          <option value="mujer">Mujer</option>
+          <option value="otro">Otro</option>
+        </select>
+        
+        <label for="peso">Peso (en kg):</label>
+        <input type="number" id="peso" name="peso" min="1" max="500" required>
+        
+        <label for="altura">Altura (en cm):</label>
+        <input type="number" id="altura" name="altura" min="50" max="300" required>
+
+        <label for="nombre">Grupo sanguíneo</label>
+
+  
+        <table>
+          <tr>
+            <td><label for="A+"></label>A+<input type="radio" id="A+" name="Sangre"></td>
+            <td><label for="A-"></label>A-<input type="radio" id="A-" name="Sangre"></td>
+            <td><label for="B+"></label>B+<input type="radio" id="B+" name="Sangre"></td>
+            <td><label for="B-"></label>B-<input type="radio" id="B-" name="Sangre"></td>
+            <td><label for="AB+"></label>AB+<input type="radio" id="AB+" name="Sangre"></td>
+            <td><label for="AB-"></label>AB-<input type="radio" id="AB-" name="Sangre"></td>
+            <td><label for="O+"></label>O+<input type="radio" id="O+" name="Sangre"></td>
+            <td><label for="O-"></label>O-<input type="radio" id="0-" name="Sangre"></td>
+          </tr>
+        </table>
+
+        <label for="nombre">Antecedentes personales (marca el/los problemas que padeces)</label>
+
+        <table>
+          <tr>
+            <td><label for="Asma"></label>Asma: <input type="checkbox" id="Asma" ></td>
+            <td><label for="Convulsiones"></label>Convulsiones: <input type="checkbox" id="Convulsiones"  ></td>
+            <td><label for="Parasitos"></label>Parasitos: <input type="checkbox" id="Parasitos" ></td>
+          </tr>
+          <tr>
+            <td><label for="Alergia"></label>Alergia: <input type="checkbox" id="Alergia" ></td>
+            <td><label for="Obesidad"></label>Obesidad: <input type="checkbox" id="Obesidad"  ></td>
+            <td><label for="Diabetis"></label>Diabetis: <input type="checkbox" id="Diabetis" ></td>
+          </tr>
+        </table>
+
+        <label for="nombre">Datos familiares</label>
+
+        <table>
+          <tr>
+            <td>Madre</td>
+            <td><input type="text" ></td>
+            <td>Apellidos</td>
+            <td><input type="text" class="sinborde" style="width: 98%;"></td>
+          </tr>
+          <tr>
+            <td>Correo</td>
+            <td><input type="text"></td>
+            <td>Telefono</td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>Padre</td>
+            <td><input type="text" ></td>
+            <td>Apellidos</td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>Correo</td>
+            <td><input type="text" ></td>
+            <td>Telefono</td>
+            <td><input type="text" ></td>
+          </tr>
+        </table>
+
+        <label for="sintomas">Síntomas:</label>
+        <textarea id="sintomas" name="sintomas" rows="4" required></textarea>
+
+        <label for="archivo">Adjuntar documentos:</label>
+        <input type="file" id="archivo" name="archivo">
+        
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+      </form>
+      
+      
+<footer class="bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Mapa del Sitio</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Redes Sociales</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Políticas</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Política de Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <p class="text-muted">Línea de transparencia - Atención al usuario - Nuestros servicios</p>
+      </div>
+      <div class="col-md-6 text-right">
+        <p class="text-muted">NOTIFICACIONES JUDICIALES: clinicalajasipiales@hotmail.com</p>
+        <p class="text-muted">CORREO DE CONTÁCTO: clinicalajasipiales@hotmail.com</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>

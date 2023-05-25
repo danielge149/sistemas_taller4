@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="staly.css">
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Container wrapper -->
+      <div class="container">
+        <!-- Navbar brand -->
+        <a class="navbar-brand me-2" >
+          <img
+            src="img/logo.ico"
+            height="16"
+            alt="MDB Logo"
+            loading="lazy"
+            style="margin-top: -1px;"
+          />
+        </a>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarButtonsExample"
+          aria-controls="navbarButtonsExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarButtonsExample">
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+          </ul>
+          <div class="collapse navbar-collapse" id="navbarButtonsExample">
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="ficha.html">Ficha medica</a>
+              </li>
+            </ul>
+            <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="info.html">Informacion</a>
+                  </li>
+                </ul>
+                <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                    <!-- Left links -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="cita.html">Pida su cita</a>
+                      </li>
+                    </ul>
+
+                    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                      <!-- Left links -->
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link" href="servicio.html">Servicios</a>
+                        </li>
+                      </ul>
+          <!-- Left links -->
+
+          <div class="d-flex align-items-center">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="sesion.html">Iniciar sesión</a>
+                </li>
+              </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="registro.html">Registrarse</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    <div class="container">
+      <nav  class="navbar navbar-light" style="background-color: #62b5f1;">
+        <h1 style="margin: auto;"> Pida su cita <span class="badge badge-primary"></span></h1>
+       </nav>
+       <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <p style="margin: auto;"> Recuerde que todos los datos que usted va de ingresar en el siguiente formulario serán validados en el sistema. La asignación de la cita dependerá de la disposición de médicos y horarios de la Institución. La atención de radiología, ecografía y electrocardiogramas son asignados directamente en la Clínica Las Lajas. El diligenciamiento de este formato es una solicitud de cita y no la confirmación de la misma, por lo tanto, debe esperar la respuesta en el correo electrónico registrado en el formulario dentro de las 72 horas hábiles siguientes a la solicitud de su cita.<span class="badge badge-primary"></span></p>
+       </nav>
+       <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <p style="margin: auto;"> Para solicitar una cita diligencie el siguiente formulario <span class="badge badge-primary"></span></p>
+       </nav>
+    
+      
+      <form>
+        <div class="form-group">
+          <label for="tipoCita">Tipo de cita:</label>
+          <select id="tipoCita" class="form-control">
+            <option value="primeraVez">Primera Vez</option>
+            <option value="control">Control</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="especialidad">Elija la especialidad:</label>
+          <select id="especialidad" class="form-control">
+            <option value="especialidad1">Especialidad 1</option>
+            <option value="especialidad2">Especialidad 2</option>
+            <!-- Agregar más opciones de especialidades -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="nombreDoctor">Nombre del Doctor (Opcional):</label>
+          <input type="text" id="nombreDoctor" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="citaAtravesDe">Cita a través de:</label>
+          <div class="form-check">
+            <input type="radio" id="eps" name="citaAtravesDe" class="form-check-input" value="eps">
+            <label class="form-check-label" for="eps">EPS</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" id="prepagada" name="citaAtravesDe" class="form-check-input" value="prepagada">
+            <label class="form-check-label" for="prepagada">Prepagada</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" id="particular" name="citaAtravesDe" class="form-check-input" value="particular">
+            <label class="form-check-label" for="particular">Particular</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="tipoRegimen">Tipo de régimen:</label>
+          <div class="form-check">
+            <input type="radio" id="subsidido" name="tipoRegimen" class="form-check-input" value="subsidiado">
+            <label class="form-check-label" for="subsidiado">Subsidiado</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" id="contributivo" name="tipoRegimen" class="form-check-input" value="contributivo">
+            <label class="form-check-label" for="contributivo">Contributivo</label>
+          </div>
+        </div>
+        <h2>Información personal:</h2>
+        <div class="form-group">
+          <label for="nombreCompleto">Nombre completo:</label>
+          <input type="text" id="nombreCompleto" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="tipoDocumento">Tipo de documento:</label>
+          <select id="tipoDocumento" class="form-control" required>
+            <option value="cedula">Cédula</option>
+            <!-- Agregar más opciones de tipos de documentos -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="numeroDocumento">Número:</label>
+          <input type="text" id="numeroDocumento" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input type="text" id="telefono" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="direccion">Dirección:</label>
+          <input type="text" id="direccion" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="municipio">Municipio:</label>
+          <input type="text" id="municipio" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+          <input type="text" id="fechaNacimiento" class="form-control" placeholder="mm/dd/aaaa" required>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="menorEdad" class="form-check-input">
+          <label class="form-check-label" for="menorEdad">Si el paciente es menor de edad por favor escriba los datos del acudiente.</label>
+        </div>
+        <div class="form-group" id="acudiente">
+          <h3>Datos del acudiente:</h3>
+          <div class="form-group">
+            <label for="nombreAcudiente">Nombre completo:</label>
+            <input type="text" id="nombreAcudiente" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="vinculo">Vinculo:</label>
+            <input type="text" id="vinculo" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="telefonoAcudiente">Teléfono:</label>
+            <input type="text" id="telefonoAcudiente" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="emailAcudiente">Email:</label>
+            <input type="email" id="emailAcudiente" class="form-control">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="observaciones">Observaciones:</label>
+          <textarea id="observaciones" class="form-control" rows="3"></textarea>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="tratamientoDatos" class="form-check-input" required>
+          <label class="form-check-label" for="tratamientoDatos">Política de tratamiento de datos y privacidad:</label>
+          <a href="#">Ver Política de tratamiento de datos y privacidad</a>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="terminosCondiciones" class="form-check-input" required>
+          <label class="form-check-label" for="terminosCondiciones">Términos y condiciones:</label>
+          <a href="#">Ver Términos y condiciones</a>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+
+
+      
+<footer class="bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Mapa del Sitio</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Redes Sociales</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Políticas</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Política de Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <p class="text-muted">Línea de transparencia - Atención al usuario - Nuestros servicios</p>
+      </div>
+      <div class="col-md-6 text-right">
+        <p class="text-muted">NOTIFICACIONES JUDICIALES: clinicalajasipiales@hotmail.com</p>
+        <p class="text-muted">CORREO DE CONTÁCTO: clinicalajasipiales@hotmail.com</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+
+  </body>
+</html>
